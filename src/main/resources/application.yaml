@@ -1,0 +1,18 @@
+cloud.aws.credentials.accessKey: 123
+cloud.aws.credentials.secretKey: 123
+cloud.aws.credentials.instanceProfile: false
+cloud.aws.region.static: us-west-1
+
+sqs.queue: test-queue
+sqs.queue.sns.fanout: test-queue-sns
+sns.topic: test-topic
+
+localstack:
+  sns:
+    url: http://localhost:4566
+  sqs:
+    url: http://localhost:4566
+
+---
+
+cloud.aws.credentials.instanceProfile: true
